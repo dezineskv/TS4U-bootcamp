@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercises</title>
+</head>
+<body>
+    <button id="click-btn">Click</button>
+
+    <!-- for simple app can have script within the body -->
+    <script>
+        // use selector method getElementById to select that element and store in variable
+        const myButton = document.getElementById("click-btn");
+
+        // add event listener (built-in method) for handling the button click. Takes 2 params.
+        // the function listens for the click event to occur
+        myButton.addEventListener("click", function() {
+            alert("You just clicked on the button");
+            console.log("clicked the button");
+        })
+    </script>
+</body>
+</html>
