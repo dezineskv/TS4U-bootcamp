@@ -42,7 +42,9 @@ li {
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 7px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .delete {
