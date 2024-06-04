@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom methods</title>
+</head>
+<body>
+    <h1 id="text">This text will be changed based on the mouseover</h1>
+    <input id="text-input" type="text" placeholder="type here...">
+    <script>
+        // first get the element by id and store it in variable
+        const text = document.getElementById("text");
+        
+        // input example for keypress. look at console info i section for the log
+        const input = document.getElementById("text-input");
+
+        text.addEventListener("mouseover", function() {
+            text.style.color = "red";
+        })
+
+        text.addEventListener("mouseout", function() {
+            text.style.color = "green";
+        })
+
+        // input event for keypress. Use event to target the input value.
+        input.addEventListener("keypress", function (event) {
+            console.log("key pressed", event.key);
+        })
+
+    </script>
+</body>
+</html>

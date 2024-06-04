@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document querySelectorAll</title>
+</head>
+<body>
+    <p>Example page</p>
+    <h2 class="example">Heading</h2>
+    <p class="example">Paragraph</p>
+
+    <!-- script -->
+    <script>
+        const nodeList = document.querySelectorAll(".example");
+        for (let i=0; i < nodeList.length; i++) {
+            nodeList[i].style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>

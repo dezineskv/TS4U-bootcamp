@@ -1,23 +1,26 @@
+// load script after the initial page has rendered so we can see what we want to be manipulated then run those scripts
+
 document.addEventListener("DOMContentLoaded", function () {
-    //input 
+    //input. we are accessing this specific id.
     const taskInput = document.getElementById("task");
     // a console log here would return the entire input element, not the input value.
 
-    //button 
+    // specific button 
     const addTaskButton = document.getElementById("addTask")
 
-    //ul 
+    // specific ul 
     const taskList = document.getElementById("taskList")
 
-    //event listener for button
+    //event listener for button after a click event happens
     addTaskButton.addEventListener("click", function () {
 
+        // get the input value
         const taskText = taskInput.value;
         console.log(taskText);
 
         //adding the values in the list
         const taskItem = document.createElement("li") //this is nothing but a li tag created with JS
-        // my solution to only continue if the input is filled in, to prevent submitting an empty value
+        // continue if the input is filled in, to prevent submitting an empty value
         if (taskText !== "") {
 
         //giving the inner html the input value
@@ -28,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         taskList.appendChild(taskItem);
 
 
-        //remove functionality starts to delete items apply event listener and remove the child element. Used querySelector on the element that was newly created.
+        //delete items via apply event listener and remove the child element. Used querySelector on the element that was newly created.
         const deleteButton = taskItem.querySelector("#delete-btn")
         deleteButton.addEventListener("click", function () {
             taskList.removeChild(taskItem)

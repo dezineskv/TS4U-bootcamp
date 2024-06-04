@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom methods</title>
+</head>
+<body>
+    <p>Change the text of the first element with class="example":</p>
+
+    <p class="example">Element 1</p>
+    <p class="example">Element 2</p>
+    
+    <script>
+    const collection = document.getElementsByClassName("example");
+    // access via index
+        collection[0].innerHTML = "Hello TS4U";
+        </script>
+    <!-- changes the first element at index 0 -->
+
+</body>
+</html>

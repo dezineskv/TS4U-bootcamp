@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom methods</title>
+</head>
+<body>
+    <div>First Section</div>
+    <div>Second Section</div>
+    <div>Third Section</div>
+    <div>Fourth Section</div>
+    <div>Fifth Section</div>
+
+    <script>
+        const sections = document.getElementsByTagName("div");
+        // use a for loop. access via index.
+        for (let i=0; i < sections.length; i++) {
+            if (i == 0) {
+                sections[i].style = "color: red; font-size: 25px";
+            } 
+            // all other ones will be blue
+            else {
+                sections[i].style = "color: blue; font-size: 25px";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom methods</title>
+</head>
+<body>
+    <p>Add a background color all elements with class="example":</p>
+    <h2 class="example">A heading</h2>
+    <p class="example">A paragraph.</p> 
+    
+    <script>
+    const nodeList = document.querySelectorAll(".example");
+    // use loop after defining the selector. this iterates thru each qualifying element
+    // use a for loop. access via index.
+
+        for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.backgroundColor = "red";
+        }
+    </script>
+
+    <!-- changes all elements with that class name. use dot or # -->
+
+</body>
+</html>
