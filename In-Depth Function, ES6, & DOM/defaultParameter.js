@@ -2,7 +2,8 @@
 const greet = (name = "kim") => {
     console.log(`Hello, ${name}`)
 }
-greet("generic name");
+// greet("generic name");
+greet();
 
 const calculateArea = (width =5, height =2) => {
     return width * height;
@@ -18,4 +19,5 @@ const createPerson = (firstName = "Me", lastName = getLastName()) => {
 const getLastName = () => {
     return 'V'
 }
-console.log(createPerson('Kim', 'Vidal'))
+// console.log(createPerson('Kim', 'Vidal'))
+console.log(createPerson('Kim'))

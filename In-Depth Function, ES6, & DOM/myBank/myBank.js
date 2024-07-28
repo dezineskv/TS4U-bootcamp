@@ -73,7 +73,7 @@ loginButton.addEventListener("click", function() {
             // update the value with the deposit amount
             document.getElementById("currentWithdraw").innerText = wAmountNum;
             // clear the withdraw input field
-            document.getElementById("depositAmount").value = '';
+            document.getElementById("withdrawAmount").value = '';
         }
       
         // clear the deposit input field
