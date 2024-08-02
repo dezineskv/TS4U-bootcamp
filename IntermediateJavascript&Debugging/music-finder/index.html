@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Music Finder</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-box">
+
+        <main class="content-area container">
+            <div class="search-bar col-md-6 mx-auto">
+                <h1 class="text-center primary-text">Find Music</h1>
+                <div class="search-box my-2 d-flex gap-3">
+                    <input type="text" class="form-control" id="inputedSearch"
+                        placeholder="Enter your artist or song name">
+                    <button class="btn btn-success search-btn ml-2" id="search-btn">Search</button>
+                </div>
+            </div>
+            <div id="invalidSong">
+
+            </div>
+            <!-- === Simple results === -->
+            <div class="" id="song-title">
+            </div>
+            <!-- Single Lyrics -->
+            <div class="single-lyrics text-center" id="single-lyrics">
+                <!-- <button class="btn go-back">&lsaquo;</button> -->
+                <h2 class="text-success mb-4" id="getTitle"></h2>
+                <pre class="lyric text-white" id="getLyrics">
+
+                </pre>
+            </div>
+
+        </main>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script Here -->
+
+    <script>
+
+        document.getElementById('search-btn').addEventListener('click', function () {
+            const inputedText = document.getElementById('inputedSearch').value;
+            if (isNaN(inputedText)) {
+                fetch('https://api.lyrics.ovh/suggest/' + inputedText + '')
+                    .then(res => res.json())
+                    .then(info => {
+                        console.log('info', info);
+                        const songsList = document.getElementById('song-title');
+                        songsList.innerHTML = '';
+                        const songName = document.getElementById('song-title');
+                        for (let i = 0; i < 5; i++) {
+                            const songs = info.data[i];
+                            console.log('songs', songs);
+                            const songsTitle = songs.title;
+                            const songsartist = songs.artist.name;
+                            const paragraph = document.createElement('p');
+                            paragraph.innerHTML = `<div class="search-result col-md-8 mx-auto py-1">
+                    <div class="single-result row align-items-center p-1">
+                        <div class="col-md-8">
+                            <h3 class="lyrics-name">${songsTitle}</h3>
+                            <p class="author lead">Album by <span>${songsartist}</span></p>
+                        </div>
+                    </div>
+                </div>`;
+                            songName.appendChild(paragraph);
+                            document.getElementById('inputedSearch').value = '';
+                        }
+                    })
+            } else {
+                // alert("please insert string");
+                const Invalid = document.getElementById('invalidSong');
+                const header = document.createElement('p');
+                header.innerHTML = `<div>
+            <h1 class="text-center">Please Insert Valid Song</h1>
+            </div>`;
+                Invalid.appendChild(header);
+                document.getElementById('inputedSearch').value = '';
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

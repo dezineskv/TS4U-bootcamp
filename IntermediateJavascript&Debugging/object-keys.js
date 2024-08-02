@@ -31,3 +31,9 @@ for(const item of keysArr) {
 /* returns firstName: Kim
 lastName: Vidal
 age: 25 */
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30
+};
