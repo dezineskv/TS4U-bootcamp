@@ -16,9 +16,11 @@ const values = Object.values(person);
 console.log(values);
 
 // looping through the array with item representing the values
-// for(let item of keysArr) {
-//     console.log(person[item]);
-// }
+for(let item of keysArr) {
+    console.log(person[item]);
+}
+
+
 // returns Kim
 // Vidal
 // 25
@@ -32,8 +34,7 @@ for(const item of keysArr) {
 lastName: Vidal
 age: 25 */
 
-const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 30
-};
+for(let item of keysArr) {
+    console.log(person[item]);
+    console.log(`${item}`);
+}

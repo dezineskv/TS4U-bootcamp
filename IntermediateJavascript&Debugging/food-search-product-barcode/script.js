@@ -1,6 +1,21 @@
 const searchInput = document.getElementById("searchInput");
 const resultsList = document.getElementById("results");
+const codeList = document.getElementById("codeList");
 
+// document.addEventListener('DOMContentLoaded', function () {
+
+// fetch('https://world.openfoodfacts.org/api/v0/product.json')
+//             .then(res => res.json())
+//             .then(data => {
+//                 console.log('data', data);
+
+//                 const codes = data.product.code;
+//                 console.log(codes)
+//       codeList.innerHTML = `<li>${codes}</li>`;
+
+
+//             })
+// });
 // Function to fetch product data from the Open Food Facts API
 async function fetchProductData(query) {
   resultsList.innerHTML = "Loading...";
@@ -9,6 +24,7 @@ async function fetchProductData(query) {
     const response = await fetch(
       `https://world.openfoodfacts.org/api/v0/product/${query}.json`
     );
+
     if (!response.ok) {
       throw new Error("API request failed");
     }
@@ -25,7 +41,11 @@ async function fetchProductData(query) {
       const productDescription =
         product.generic_name || "Product Description Not Available";
 
-      resultsList.innerHTML = `<li><strong>${productName}</strong><br>${productDescription}</li>`;
+        const codes = product.code;
+        console.log(codes)
+        codeList.innerHTML = `<li>Barcode: ${codes}</li>`;
+
+        resultsList.innerHTML = `<li><strong>${productName}</strong><br>${productDescription}</li>`;
     }
   } catch (error) {
     console.error(error);

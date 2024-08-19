@@ -1,22 +1,11 @@
-const ages = ["stone", "middle ages", "modern age"];
+// filter. can omit index and array.
+// if num is divisible by 2 it is even. save to a variable.
+let numbers3 = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers3.filter((num) => num % 2 === 0
+)
+console.log(evenNumbers)
+// returns [ 2, 4, 6 ] because it satisfies the condition
 
-ages.filter((name,index, array) => {
-    console.log("each name: ", name);
-    console.log("each index: ", index);
-    console.log("whole array: ", array);
-});
-console.log(ages)
-/* RETURNS
-each name:  stone
-each index:  0
-whole array:  [ 'stone', 'middle ages', 'modern age' ]
-each name:  middle ages
-each index:  1
-whole array:  [ 'stone', 'middle ages', 'modern age' ]
-each name:  modern age
-each index:  2
-whole array:  [ 'stone', 'middle ages', 'modern age' ]
-[ 'stone', 'middle ages', 'modern age' ] */
 
 // map
 const numbers2 = [15,20,33,55];
@@ -24,7 +13,8 @@ const numbers2 = [15,20,33,55];
 const numbers = numbers2.map(num => num * 10
 )
 console.log(numbers)
-// returns [ 150, 200, 330, 550 ]
+// returns [ 150, 200, 330, 550 ]. calculates each element's condition.
+
 
 // find
 const shirts = ["small", "medium", "large"];
@@ -34,11 +24,13 @@ const longShirts = shirts.find(shirts => shirts.length > 5
 console.log(longShirts)
 // returns medium
 
+
 //slice
 const toppings = ["pepperoni", "mushroom", "olive"];
 const slicedToppings = toppings.slice(1,3);
 console.log(slicedToppings);
 // returns [ 'mushroom', 'olive' ]
+
 
 //splice
 const dogs = ["poodle", "terrier", "corgi"];
@@ -49,7 +41,9 @@ console.log("removed: ", removed);
 console.log("original: ", dogs);
 // returns removed:  [ 'terrier' ] and original:  [ 'poodle', 'chihuahua', 'corgi' ]
 
+
 //split
 const sentence = "Hello, words of a sentence here";
 const words = sentence.split(" ");
 console.log("Words ", words);
+// returns Words  [ 'Hello,', 'words', 'of', 'a', 'sentence', 'here' ]

@@ -10,7 +10,8 @@
 
 // person1.sayHello();
 
-// creating class with constructor
+// creating class/object instance via constructor method. Pass in params that are the object's properties/key-value pairs
+ 
 class People {
     constructor(firstName, secondName) {
         this.firstName = firstName
@@ -21,6 +22,6 @@ class People {
     }
 }
 
-const people1= new People("name1", "name2");
+const people1 = new People("name1", "name2");
 
 people1.sayHello();

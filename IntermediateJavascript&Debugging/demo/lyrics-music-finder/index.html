@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Music Finder App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-box">
+        <h1 class="primary-text pt-3 pl-3">MUSIC FINDER</h1><br>
+        <main class="content-area container">
+            <div class="search-bar col-md-6 mx-auto">
+                <h3 class="text-center primary-text">Find lyrics by Artist/Song title</h3>
+                <div class="search-box my-2 d-flex gap-3">
+                    <input type="text" class="form-control mr-2" id="inputedSearch"
+                        placeholder="artist name/song title">
+                    <button class="btn btn-success search-btn ml-2 w-50" tyle="max-width: 80%" id="search-btn">Search Lyrics</button>
+                </div>
+                <br>
+                <h3 class="text-center primary-text">Find artist or song</h3>
+                <strong><span style="display: block; color: white; text-align: center">Top 5 Results</span></strong>
+                <div class="search-box my-2 d-flex gap-3">                                  
+                    <input type="text" class="form-control mr-2" style="max-width: 80%" id="inputedSearch2"
+                        placeholder="artist name or song title">
+                    <button class="btn btn-success search-btn ml-2 w-50" id="search-btn2">Search Songs</button>
+                </div>
+            </div>           
+            <!-- song results -->
+            <div id="top" class="text-center primary-text mt-3"></div>
+            <!-- lyrics results -->
+            <div class="single-lyrics text-center" id="song-title"></div>
+            <br>
+        </main>
+    </div>
+    <script src="lyric.js"></script>
+    <script src="artist.js"></script>
+</body>
+</html>

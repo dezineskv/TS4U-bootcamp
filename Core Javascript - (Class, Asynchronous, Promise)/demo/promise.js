@@ -15,7 +15,7 @@ const fetchData = () => {
 console.log("step order 2")
 
 fetchData()
-        .then(result => console.log('Result', result))
+        .then(data => console.log('Result', data))
         .catch(error => console.log('Error', error))
 
 
