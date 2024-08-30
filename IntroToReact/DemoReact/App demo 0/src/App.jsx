@@ -1,5 +1,3 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Heading from './components/Heading'
 import Button from './components/Button'
@@ -10,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div><img src={HeroImage} alt="Hero" /></div>
+      <div><img src={HeroImage} className="hero" alt="Hero" /></div>
       <Heading></Heading> 
       <Content paragraphs="new paragraph"></Content> 
       <Button></Button>
