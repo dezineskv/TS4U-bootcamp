@@ -2,7 +2,7 @@ const Heading = () => {
 
     return (
         <div>
-            <h1>My Single Page Alert</h1>
+            <h1>My Single Page</h1>
         </div>
     )
 }

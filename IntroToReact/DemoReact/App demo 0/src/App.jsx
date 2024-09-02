@@ -10,7 +10,7 @@ function App() {
     <>
       <div><img src={HeroImage} className="hero" alt="Hero" /></div>
       <Heading></Heading> 
-      <Content paragraphs="new paragraph"></Content> 
+      <Content paragraphs="This page has an alert button."></Content> 
       <Button></Button>
     </>
   )

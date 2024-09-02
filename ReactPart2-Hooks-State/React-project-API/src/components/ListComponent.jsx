@@ -7,18 +7,25 @@ const ListComponent = () => {
     useEffect(() => {
         fetch("https://api.ts4u.us/api/course/get?type=program")
         .then((res) => res.json())
-        .then((data) => setData(data))
+        .then((data) => setData(data.courses))
         .catch((err) => console.log(err));
     }, []);
 
-    console.log(data.success);
+    console.log(data.courses);
     return (
-        <div>
+        <>
+        <div style={{marginLeft: 'auto', marginRight: 'auto', display: 'flex'}}>
             {data.map((item, index) => (
-                <p key={index}>{item.success}</p>
+                <div key={item._id} style={{textAlign: 'center', borderStyle: 'solid', borderWidth: '1px', borderColor: 'white', padding: '30px', marginBottom: '20px', marginRight: '20px'}}>
+                  <div><img src={item.image} alt="image" className="images" /></div>
+                  <h3>{item.meta.title}</h3>
+                  <p>{item.meta.shortDescription}</p>
+                  <p style={{fontSize: '12px'}}>{item.shortDetail}</p>
+                </div>
             ))}
+           </div>
 
-        </div>
+        </>
     )
 }
 export default ListComponent;

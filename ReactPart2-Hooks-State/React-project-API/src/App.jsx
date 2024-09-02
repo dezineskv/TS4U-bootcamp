@@ -1,29 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import ListComponent from './components/ListComponent';
 
 function App()  {
 
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        fetch("https://api.ts4u.us/api/course/get?type=program")
-        .then((res) => res.json())
-        .then((data) => setData(data.courses))
-        .catch((err) => console.log(err));
-    }, []);
-
-    console.log(data.courses);
     return (
         <>
-        <div style={{width: '50%', marginLeft: 'auto', marginRight: 'auto'}}>
-            {data.map((item, index) => (
-                <div key={item._id} style={{textAlign: 'center', borderStyle: 'solid', borderWidth: '1px', borderColor: 'white', padding: '30px', marginBottom: '20px'}}>
-                  <h3>{item.meta.title}</h3>
-                  <p>{item.meta.description}</p>
-                  <p style={{fontSize: '12px'}}>{item.shortDetail}</p>
-                </div>
-            ))}
-           </div>
+        <h2>TS4U Bootcamps</h2>
+        <p><a href="https://ts4u.us/link/training">Join our chat</a> for FREE personal career counseling, scholarship, and discounts!</p>
+            <ListComponent></ListComponent>
 
         </>
     )
