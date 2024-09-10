@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const TestingInputValue = () => {
-    const [inputValue, setInputValue] = useState("old");
+    const [inputValue, setInputValue] = useState("");
 
     const changeStateValue = (e) => {
         setInputValue(e.target.value);

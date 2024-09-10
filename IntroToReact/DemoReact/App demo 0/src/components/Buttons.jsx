@@ -1,4 +1,4 @@
-const Button = () => {
+const Buttons = () => {
     const handleClick = () => {
         alert("Here's your alert!");
     }
@@ -10,5 +10,5 @@ const Button = () => {
     )
 }
 
-export default Button;
+export default Buttons;
 
