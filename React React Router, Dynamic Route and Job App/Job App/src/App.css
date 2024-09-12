@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.bg {
+  background-color: white;
+}
+.card {
+  padding: 2em;
+}
+.read-the-docs {
+  color: #888;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.job_container {
+  padding: 50px, 20px;
+}
+.single_job {
+  display: grid;
+  grid-template-columns: 6% 40% 40% 15%;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 20px 10px;
+  box-shadow: 4px 4px 10px 0 rgba(22, 25, 28, .07);
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.job_thumbnail {
+  padding: 0px, 30px;
+}
+.stack {
+  display: flex;
+}
+.apply_btn {
+  background-color:#062539;color:#fff;padding:10px 30px;border:none;cursor:pointer;
+}
+.apply_txt {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+.location_img {
+  width: 15px;
+  height: 15px;
+}
+.bold {
+  font-weight: bold;
+}
+.detail {
+  background-color: white; text-align: left; font-size: 18px; padding: 30px 20px;
+}
+.entries {
+  margin-bottom: 20px;
+}
+.pointer {
+  padding-right: 10px;
+}
+.stacks {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(128, 128, 128);
+  border-radius: 7px;
+  padding: 10px;
+}

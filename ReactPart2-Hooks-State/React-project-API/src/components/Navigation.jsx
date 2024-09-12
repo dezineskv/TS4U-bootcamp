@@ -6,7 +6,7 @@ function Navigation() {
         <>
         <ul style={{listStyle: 'none'}}>
             <Link to="/">
-            <li>New Home Page Route</li></Link>
+            <li>Home Page Route</li></Link>
             <Link to="/counters"><li>Counter</li></Link>
             <Link to="/people"><li>People Page</li></Link>
 

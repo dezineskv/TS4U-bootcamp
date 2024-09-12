@@ -4,20 +4,24 @@ import Buttons from './components/Buttons'
 import Content from './components/Content'
 import HeroImage from "./OIP.jpg";
 import PracticeButton from './components/PracticeButton';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnotherButton from './components/AnotherButton';
 import Counter from './components/Counter';
-
 
 function App() {
   const [message, handleClick] = useState("Hello from Parent");
   const [text, setValue] = useState("new value");
   console.log(text);
   const [newMessage, setMessage] = useState("Hello");
+  const [toggle, setToggle] = useState(false);
 
- const handleEvents = () => {
-  alert(newMessage);
- }
+  const handleToggle = () => {
+    setToggle(!toggle);
+    console.log('Toggle value:', toggle)
+  }
+  const handleEvents = () => {
+   alert(newMessage);
+  }
 
   return (
     <>
@@ -29,6 +33,7 @@ function App() {
       <PracticeButton message={message}></PracticeButton>
       <AnotherButton></AnotherButton>
       <Counter></Counter>
+      <div style={{marginTop: '20px'}}><button onClick={handleToggle}>Toggle</button></div>
     </>
   )
 }
