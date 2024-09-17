@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Navigation() {
   return (
     <>
-    <div><Link to="/">Job Listings</Link></div>
+    <h2><Link to="/">Job Listings</Link></h2>
     </>
   )
 }

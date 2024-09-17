@@ -1,17 +1,15 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
+  padding: 0;
   text-align: center;
-  background-color: white;
   color: black;
+  background-color: #062539;
+  vertical-align: top;
 }
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-}
-.bg {
-  background-color: white;
 }
 .card {
   padding: 2em;
@@ -20,15 +18,19 @@
   color: #888;
 }
 .container {
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 .job_container {
   padding: 50px, 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: white;
 }
 .single_job {
   display: grid;
-  grid-template-columns: 6% 40% 40% 15%;
+  grid-template-columns: 6% 27% 50% 15%;
   align-items: center;
   padding: 15px 20px;
   margin: 20px 10px;
@@ -41,9 +43,6 @@
 .job_thumbnail {
   padding: 0px, 30px;
 }
-.stack {
-  display: flex;
-}
 .apply_btn {
   background-color:#062539;color:#fff;padding:10px 30px;border:none;cursor:pointer;
 }
@@ -51,6 +50,7 @@
   color: white;
   text-align: center;
   margin: 0 auto;
+  background-color: #062539;
 }
 .location_img {
   width: 15px;
@@ -59,19 +59,26 @@
 .bold {
   font-weight: bold;
 }
-.detail {
-  background-color: white; text-align: left; font-size: 18px; padding: 30px 20px;
-}
+
 .entries {
   margin-bottom: 20px;
 }
 .pointer {
   padding-right: 10px;
 }
+.stack {
+  display: flex;
+  justify-content: flex-start;
+}
 .stacks {
   border-width: 2px;
   border-style: solid;
   border-color: rgb(128, 128, 128);
   border-radius: 7px;
-  padding: 10px;
+  margin-left: 10px;
+  text-wrap: wrap;
+  overflow: visible;
+  width: 20%;
+  min-height: 50px;
+  padding-top: 10px;
 }

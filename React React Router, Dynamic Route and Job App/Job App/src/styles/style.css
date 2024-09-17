@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+.bg {
+    background-color: #062539;
+}
+.detail {
+    padding: 50px, 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: white;
+    text-align: left;
+  }

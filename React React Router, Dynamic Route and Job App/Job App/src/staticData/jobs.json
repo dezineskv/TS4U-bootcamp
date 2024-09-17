@@ -29,7 +29,7 @@
 ],
 "vacancy": 1,
 "salary": "Negotiable",
-"stack": [
+"stacks": [
     "Javascript", "ReactJs", "NextJs", "Redux"
 ],
 "img": "https://ts4u.us/career/frontend.png",
@@ -38,14 +38,14 @@
         },
         {
             "id": 2,
-"title": "MERN Stack Developer",
+"title": "MERN stacks Developer",
 "blurb": "TS4U Ltd. is looking for energetic and proactive individuals to be a part of our development team, supporting established projects and creating from the ground up. The ideal candidate is an experienced leader and team player adept at front-end and back-end development.",
 "location": "Dhaka, Bangladesh",
 "type": "Full Time",
-"apply": "https://ts4u.us/career/mern-stack-developer/submit",
+"apply": "https://ts4u.us/career/mern-stacks-developer/submit",
 "skills": [
 "Strong programming skills in JavaScript and Node.js; ",
-"Excellent understanding of the MERN stack and its components; ",
+"Excellent understanding of the MERN stacks and its components; ",
 "Strong knowledge of database design and management; ",
 "Ability to write clean, maintainable, and scalable code; ",
 "Excellent problem-solving and analytical skills; ",
@@ -60,13 +60,13 @@
     "Debug and troubleshoot code issues, and provide timely solutions",
     "Work with version control tools like Git and continuously integrate and deploy code using tools like Jenkins or Travis CI",
     "Participate in code reviews and provide feedback to other developers",
-    "Stay up-to-date with emerging trends and technologies in the MERN stack",
+    "Stay up-to-date with emerging trends and technologies in the MERN stacks",
     "Write clear technical documentation for other team members and stakeholders"
 ],
 "vacancy": 1,
 "salary": "Negotiable",
-"stack": [
-    "MERN", "Full Stack", "Frontend", "Backend"
+"stacks": [
+    "MERN", "Full stacks", "Frontend", "Backend"
 ],
 "img": "https://ts4u.us/career/web-developer.png",
 "color": "rgb(210, 242, 255)"
@@ -75,14 +75,14 @@
         },
         {
             "id": 3,
-"title": "MERN Stack Developer",
+"title": "MERN stacks Developer",
 "blurb": "TS4U Ltd. is looking for energetic and proactive individuals to be a part of our development team, supporting established projects and creating from the ground up. The ideal candidate is an experienced leader and team player adept at front-end and back-end development.",
 "location": "Dhaka, Bangladesh",
 "type": "Full Time",
-"apply": "https://ts4u.us/career/mern-stack-developer/submit",
+"apply": "https://ts4u.us/career/mern-stacks-developer/submit",
 "skills": [
     "Strong programming skills in JavaScript and Node.js; ",
-    "Excellent understanding of the MERN stack and its components; ",
+    "Excellent understanding of the MERN stacks and its components; ",
     "Strong knowledge of database design and management; ",
     "Ability to write clean, maintainable, and scalable code; ",
     "Excellent problem-solving and analytical skills; ",
@@ -97,13 +97,13 @@
     "Debug and troubleshoot code issues, and provide timely solutions",
     "Work with version control tools like Git and continuously integrate and deploy code using tools like Jenkins or Travis CI",
     "Participate in code reviews and provide feedback to other developers",
-    "Stay up-to-date with emerging trends and technologies in the MERN stack",
+    "Stay up-to-date with emerging trends and technologies in the MERN stacks",
     "Write clear technical documentation for other team members and stakeholders"
 ],
 "vacancy": 1,
 "salary": "Negotiable",
-"stack": [
-    "MERN", "Full Stack", "Frontend", "Backend"
+"stacks": [
+    "MERN", "Full stacks", "Frontend", "Backend"
 ],
 "img": "https://ts4u.us/career/web-developer.png",
 "color": "rgb(210, 242, 255)"
@@ -112,14 +112,14 @@
         },
         {
             "id": 4,
-"title": "MERN Stack Developer",
+"title": "MERN stacks Developer",
 "blurb": "TS4U Ltd. is looking for energetic and proactive individuals to be a part of our development team, supporting established projects and creating from the ground up. The ideal candidate is an experienced leader and team player adept at front-end and back-end development.",
 "location": "Dhaka, Bangladesh",
 "type": "Full Time",
-"apply": "https://ts4u.us/career/mern-stack-developer/submit",
+"apply": "https://ts4u.us/career/mern-stacks-developer/submit",
 "skills": [
     "Strong programming skills in JavaScript and Node.js; ",
-    "Excellent understanding of the MERN stack and its components; ",
+    "Excellent understanding of the MERN stacks and its components; ",
     "Strong knowledge of database design and management; ",
     "Ability to write clean, maintainable, and scalable code; ",
     "Excellent problem-solving and analytical skills; ",
@@ -134,19 +134,20 @@
     "Debug and troubleshoot code issues, and provide timely solutions",
     "Work with version control tools like Git and continuously integrate and deploy code using tools like Jenkins or Travis CI",
     "Participate in code reviews and provide feedback to other developers",
-    "Stay up-to-date with emerging trends and technologies in the MERN stack",
+    "Stay up-to-date with emerging trends and technologies in the MERN stacks",
     "Write clear technical documentation for other team members and stakeholders"
 ],
 "vacancy": 1,
 "salary": "Negotiable",
-"stack": [
-    "MERN", "Full Stack", "Frontend", "Backend"
+"stacks": [
+    "MERN", "Full stacks", "Frontend", "Backend"
 ],
 "img": "https://ts4u.us/career/web-developer.png",
 "color": "rgb(210, 242, 255)"
 
             
         }
+
     ]
  
     
